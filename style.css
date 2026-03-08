@@ -1,18 +1,51 @@
+/* ===== STILE GENERALE ===== */
 body{
-font-family: Arial;
-background:#f4f6f9;
-margin:40px;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:40px;
+    background-color:#0f172a; /* blu scuro */
+    color:#e5e7eb; /* colore testo chiaro */
 }
 
+/* ===== TITOLO PRINCIPALE ===== */
 h1{
-color:#1a73e8;
+    color:#22d3ee; /* turchese */
+    text-align:center;
+    margin-top:30px;
 }
 
+/* ===== TITOLO SEZIONI ===== */
 h2{
-color:#333;
+    color:#22d3ee;
+    margin-top:30px;
 }
 
+/* ===== PARAGRAFI ===== */
+p{
+    line-height:1.6;
+}
+
+/* ===== LINK ===== */
 a{
-color:#1a73e8;
-text-decoration:none;
+    color:#22d3ee;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:#67e8f9; /* turchese chiaro al passaggio */
+}
+
+/* ===== LISTE NELLA HOME ===== */
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    background:#1e293b; /* box blu scuro per argomenti */
+    padding:15px;
+    margin:10px 0;
+    border-left:4px solid #22d3ee; /* bordo turchese */
+    border-radius:6px;
 }
