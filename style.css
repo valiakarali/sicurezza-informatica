@@ -3,40 +3,40 @@ body{
     font-family: Arial, sans-serif;
     margin:0;
     padding:40px;
-    background-color:#0a0f2c; /* blu scuro molto profondo */
-    color:#e0f7fa; /* testo chiaro leggermente azzurro */
+    background-color:#0a0f2c; /* blu scuro */
+    color:#e0f7fa; /* testo chiaro */
 }
 
 /* ===== TITOLO PRINCIPALE ===== */
 h1{
-    color:#00fff7; /* turchese acceso */
+    color:#00ffff; /* turchese puro acceso */
     text-align:center;
     margin-top:30px;
 }
 
 /* ===== TITOLO SEZIONI ===== */
 h2{
-    color:#00fff7; /* turchese */
+    color:#00ffff; /* turchese puro */
     margin-top:30px;
-    border-bottom:2px solid #00fff7; /* dettaglio turchese sotto il titolo */
+    border-bottom:2px solid #00ffff; /* dettaglio turchese sotto il titolo */
     padding-bottom:5px;
 }
 
 /* ===== PARAGRAFI ===== */
 p{
     line-height:1.6;
-    color:#cce7ef; /* leggermente più chiaro del testo normale */
+    color:#ccefff; /* leggermente più chiaro del testo normale */
 }
 
 /* ===== LINK ===== */
 a{
-    color:#00fff7; /* turchese */
+    color:#00ffff; /* turchese puro */
     text-decoration:none;
     font-weight:bold;
 }
 
 a:hover{
-    color:#66fff9; /* turchese chiaro al passaggio */
+    color:#66ffff; /* turchese chiaro al passaggio */
     text-decoration:underline;
 }
 
@@ -50,7 +50,7 @@ li{
     background:#111837; /* box blu scuro leggermente più chiaro dello sfondo */
     padding:15px;
     margin:10px 0;
-    border-left:4px solid #00fff7; /* bordo turchese */
+    border-left:4px solid #00ffff; /* bordo turchese puro */
     border-radius:6px;
     transition: all 0.3s ease;
 }
