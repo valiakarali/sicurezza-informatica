@@ -1,13 +1,13 @@
 body{
     font-family: Arial, sans-serif;
     margin:0;
-    padding:70px 40px 40px 40px; /* in alto spazio per navbar */
-    background-color:#0a0f2c; /* blu scuro */
+    padding:70px 40px 40px 40px; /* spazio per navbar */
+    background-color:#0a0f2c;
     color:#e0f7fa;
 }
 
 h1{
-    color:#00ffff; /* turchese puro */
+    color:#00ffff;
     text-align:center;
     margin-top:30px;
 }
@@ -24,6 +24,7 @@ p{
     color:#ccefff;
 }
 
+/* ===== Navbar fissa ===== */
 nav{
     position:fixed;
     top:0;
@@ -47,6 +48,7 @@ nav a:hover{
     color:#66ffff;
 }
 
+/* ===== Box/Card ===== */
 .card{
     background:#111837;
     border-left:4px solid #00ffff;
@@ -54,9 +56,45 @@ nav a:hover{
     margin:15px 0;
     border-radius:8px;
     transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
 }
 
 .card:hover{
     background:#1a2466;
     transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+/* ===== Sezioni collapsible ===== */
+.collapsible {
+  background:#111837;
+  color:#00ffff;
+  cursor:pointer;
+  padding:15px;
+  width:100%;
+  border:none;
+  text-align:left;
+  font-weight:bold;
+  margin:10px 0;
+  border-radius:6px;
+  transition: background 0.3s ease;
+}
+.collapsible:hover { background:#1a2466; }
+
+.content {
+  padding:0 15px;
+  display:none;
+  background:#1a2466;
+  margin-bottom:10px;
+  border-radius:6px;
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  margin-top:40px;
+  padding:20px;
+  color:#00ffff;
+  background:#111837;
+  border-top:1px solid #00ffff;
 }
