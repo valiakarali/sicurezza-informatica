@@ -62,8 +62,20 @@ nav a:hover{
     transition: all 0.3s ease;
 }
 
+.card{
+    background:#111837;
+    border-left:4px solid #00ffff;
+    padding:20px;
+    margin:15px 0;
+    border-radius:8px;
+    transition: all 0.3s ease; /* transizione dolce */
+}
+
+/* Hover più dinamico */
 .card:hover{
-    background:#1a2466;
+    background:#1a2466;          /* leggero cambio di blu scuro */
+    transform: translateY(-5px); /* sollevamento */
+    box-shadow: 0 8px 15px rgba(0,255,255,0.3); /* ombra turchese */
 }
 
 /* Footer */
