@@ -1,60 +1,62 @@
-/* ===== STILE GENERALE ===== */
 body{
     font-family: Arial, sans-serif;
     margin:0;
-    padding:40px;
+    padding:70px 40px 40px 40px; /* in alto spazio per navbar */
     background-color:#0a0f2c; /* blu scuro */
-    color:#e0f7fa; /* testo chiaro */
+    color:#e0f7fa;
 }
 
-/* ===== TITOLO PRINCIPALE ===== */
 h1{
-    color:#00ffff; /* turchese puro acceso */
+    color:#00ffff; /* turchese puro */
     text-align:center;
     margin-top:30px;
 }
 
-/* ===== TITOLO SEZIONI ===== */
 h2{
-    color:#00ffff; /* turchese puro */
+    color:#00ffff;
     margin-top:30px;
-    border-bottom:2px solid #00ffff; /* dettaglio turchese sotto il titolo */
+    border-bottom:2px solid #00ffff;
     padding-bottom:5px;
 }
 
-/* ===== PARAGRAFI ===== */
 p{
     line-height:1.6;
-    color:#ccefff; /* leggermente più chiaro del testo normale */
+    color:#ccefff;
 }
 
-/* ===== LINK ===== */
-a{
-    color:#00ffff; /* turchese puro */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111837;
+    padding:10px 20px;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    color:#00ffff;
     text-decoration:none;
+    margin:0 15px;
     font-weight:bold;
+    transition: color 0.3s ease;
 }
 
-a:hover{
-    color:#66ffff; /* turchese chiaro al passaggio */
-    text-decoration:underline;
+nav a:hover{
+    color:#66ffff;
 }
 
-/* ===== LISTE NELLA HOME ===== */
-ul{
-    list-style:none;
-    padding:0;
-}
-
-li{
-    background:#111837; /* box blu scuro leggermente più chiaro dello sfondo */
-    padding:15px;
-    margin:10px 0;
-    border-left:4px solid #00ffff; /* bordo turchese puro */
-    border-radius:6px;
+.card{
+    background:#111837;
+    border-left:4px solid #00ffff;
+    padding:20px;
+    margin:15px 0;
+    border-radius:8px;
     transition: all 0.3s ease;
 }
 
-li:hover{
-    background:#1a2466; /* effetto hover blu più chiaro */
+.card:hover{
+    background:#1a2466;
+    transform: translateY(-3px);
 }
