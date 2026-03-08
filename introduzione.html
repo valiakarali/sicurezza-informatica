@@ -1,30 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
+<meta charset="UTF-8">
 <title>Introduzione</title>
 <link rel="stylesheet" href="style.css">
-</head>
+<style>
+/* ===== Navbar fissa ===== */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#111837;
+  padding:10px 20px;
+  z-index:100;
+  display:flex;
+  justify-content:center;
+}
+nav a{
+  color:#00ffff;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+  transition: color 0.3s ease;
+}
+nav a:hover{
+  color:#66ffff;
+}
 
+/* ===== Margine per contenuti sotto navbar ===== */
+body{padding-top:70px;}
+
+/* ===== Box sezione ===== */
+.card {
+  background:#111837;
+  border-left:4px solid #00ffff;
+  padding:20px;
+  margin:15px 0;
+  border-radius:8px;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  background:#1a2466;
+  transform: translateY(-3px);
+}
+
+/* ===== Stile generale ===== */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:40px;
+    background-color:#0a0f2c; /* blu scuro */
+    color:#e0f7fa; 
+}
+h1{
+    color:#00ffff;
+    text-align:center;
+    margin-top:30px;
+}
+h2{
+    color:#00ffff;
+    margin-top:30px;
+    border-bottom:2px solid #00ffff;
+    padding-bottom:5px;
+}
+p{
+    line-height:1.6;
+    color:#ccefff;
+}
+</style>
+</head>
 <body>
 
-<h1>Introduzione alla sicurezza informatica</h1>
+<!-- Navbar fissa -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="introduzione.html">Introduzione</a>
+  <a href="prerequisiti.html">Prerequisiti</a>
+  <a href="conoscenze.html">Conoscenze</a>
+  <a href="abilita-competenze.html">Abilità & Competenze</a>
+</nav>
 
-<h2>Sicurezza di un sistema informatico</h2>
-<p>La sicurezza di un sistema informatico riguarda la protezione di hardware, software e dati da accessi non autorizzati o attacchi informatici.</p>
+<h1>Introduzione</h1>
 
-<h2>La sicurezza informatica</h2>
-<p>La sicurezza informatica è l'insieme di tecnologie e pratiche utilizzate per proteggere sistemi informatici e informazioni.</p>
+<div class="card">
+  <h2>Sicurezza di un sistema informatico</h2>
+  <p>Scrivi qui il testo...</p>
+</div>
 
-<h2>Crittografia</h2>
-<p>La crittografia è una tecnica che permette di proteggere le informazioni trasformandole in un formato leggibile solo da chi possiede la chiave.</p>
+<div class="card">
+  <h2>La sicurezza informatica</h2>
+  <p>Scrivi qui il testo...</p>
+</div>
 
-<h2>VPN e protocolli sicuri</h2>
-<p>Le VPN permettono di creare connessioni sicure su Internet utilizzando protocolli di comunicazione protetti.</p>
+<div class="card">
+  <h2>Crittografia</h2>
+  <p>Scrivi qui il testo...</p>
+</div>
 
-<h2>Sicurezza perimetrale</h2>
-<p>La sicurezza perimetrale protegge una rete da accessi esterni tramite firewall, controlli di accesso e altri sistemi di protezione.</p>
+<div class="card">
+  <h2>VPN e protocolli sicuri</h2>
+  <p>Scrivi qui il testo...</p>
+</div>
 
-<a href="index.html">Torna alla home</a>
+<div class="card">
+  <h2>Sicurezza perimetrale e applicazioni</h2>
+  <p>Scrivi qui il testo...</p>
+</div>
 
 </body>
 </html>
