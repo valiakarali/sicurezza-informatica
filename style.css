@@ -1,60 +1,181 @@
-body{
-    font-family: Arial, sans-serif;
+/* ===== STILE PRINCIPALE ===== */
+body {
     margin:0;
-    padding:70px 40px 40px 40px;
-    background-color:#0a0f2c; /* blu scuro */
-    color:#e0f7fa;
+    font-family: 'Arial', sans-serif;
+    background: #0a0f2c;
+    color: #e0f7fa;
+    overflow-x: hidden;
 }
 
-nav{
-    position:fixed;
+/* ===== NAVBAR ===== */
+nav {
+    position: fixed;
     top:0;
-    width:100%;
-    background:#111837;
-    padding:10px 20px;
-    z-index:100;
-    display:flex;
-    justify-content:center;
+    left:0;
+    width: 100%;
+    background: #111837;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-nav a{
-    color:#00ffff;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+nav a {
+    color: #00ffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
-h1{
-    color:#00ffff;
-    text-align:center;
-    margin-top:30px;
+nav a:hover, nav a.active {
+    background: #1a2466;
+    color: #66ffff;
 }
 
-h2{
-    color:#00ffff;
-    margin-top:20px;
-    border-bottom:2px solid #00ffff;
-    padding-bottom:5px;
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    margin-top: 80px;
+    padding: 40px 80px;
 }
 
-p, li{
-    line-height:1.6;
-    color:#ccefff;
-}
-
-.card{
-    background:#111837;
-    border-left:4px solid #00ffff;
+/* ===== CARD ===== */
+.card {
+    background: rgba(17,24,55,0.9);
+    border-left: 6px solid #00ffff;
     padding:20px;
-    margin:15px 0;
+    margin-bottom:30px;
+    border-radius:10px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,255,255,0.4);
+}
+
+.card .text {
+    flex:1;
+}
+
+.card img {
+    width:200px;
+    height:auto;
+    margin-left:20px;
     border-radius:8px;
 }
 
-footer{
-    text-align:center;
-    margin-top:40px;
-    padding:20px;
+/* ===== TITOLI ===== */
+h1 {
     color:#00ffff;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h2 {
+    color:#00ffff;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+h3 {
+    color:#66ffff;
+    margin-top:15px;
+}
+
+/* ===== SFONDI PER PAGINA ===== */
+body.index { background: url('https://images.unsplash.com/photo-1581091870623-07d3b08a36c5?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; }
+body.introduzione { background: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; }
+
+/* Overlay per leggibilità */
+.main-content {
+    background: rgba(10,15,44,0.85);
+    border-radius: 10px;
+}
+
+/* ===== ACCORDION ===== */
+.accordion {
+    cursor: pointer;
+    background-color: rgba(0,255,255,0.1);
+    color: #00ffff;
+    padding: 10px;
+    margin:5px 0;
+    border:none;
+    text-align:left;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+    border-radius:5px;
+}
+
+.accordion:hover {
+    background-color: rgba(0,255,255,0.2);
+}
+
+.panel {
+    padding: 0 10px;
+    display: none;
+    background-color: rgba(0,255,255,0.05);
+    overflow: hidden;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+/* ===== TOOLTIP ===== */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    color: #66ffff;
+    border-bottom: 1px dotted #66ffff;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #111837;
+    color: #00ffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
     background:#111837;
+    color:#00ffff;
     border-top:1px solid #00ffff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 900px){
+    .main-content { padding:20px; }
+    .card { flex-direction: column; }
+    .card img { width:100%; margin-left:0; margin-top:10px; }
 }
