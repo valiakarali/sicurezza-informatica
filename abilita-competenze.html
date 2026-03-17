@@ -2,46 +2,48 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Abilità & Competenze</title>
+<title>Abilità & Competenze - Sicurezza Informatica</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="abilita">
 
 <nav>
   <a href="index.html">Home</a>
   <a href="introduzione.html">Introduzione</a>
   <a href="prerequisiti.html">Prerequisiti</a>
   <a href="conoscenze.html">Conoscenze</a>
-  <a href="abilita-competenze.html">Abilità & Competenze</a>
+  <a href="abilita-competenze.html" class="active">Abilità & Competenze</a>
 </nav>
 
+<div class="main-content">
 <h1>Abilità & Competenze</h1>
 
 <div class="card">
-  <h2>
-    <svg width="20" height="20" fill="#00ffff" style="vertical-align:middle; margin-right:8px;">
-      <rect width="20" height="20"/>
-    </svg>
-    Progettare reti sicure
-  </h2>
-  <p>Scrivi qui il testo...</p>
+  <div class="text">
+    <h2>Pratiche richieste</h2>
+    <p>Questa sezione mostra le abilità pratiche: progettare reti sicure, configurare sistemi e VPN, applicare tecniche di crittografia e autenticazione.</p>
+    
+    <button class="accordion">Progettare reti sicure</button>
+    <div class="panel"><p>Progettazione di reti interconnesse con privacy e sicurezza.</p></div>
+    
+    <button class="accordion">Tecniche di crittografia e autenticazione</button>
+    <div class="panel"><p>Applicazione pratica della crittografia simmetrica, asimmetrica e firme digitali.</p></div>
+    
+    <button class="accordion">Configurazione sistemi e VPN</button>
+    <div class="panel"><p>Configurazione della sicurezza perimetrale e VPN.</p></div>
+    
+    <p>Termine utile: <span class="tooltip">Firewall
+      <span class="tooltiptext">Sistema di sicurezza perimetrale che controlla il traffico di rete.</span>
+    </span></p>
+    
+  </div>
 </div>
-
-<div class="card">
-  <h2>
-    <svg width="20" height="20" fill="#00ffff" style="vertical-align:middle; margin-right:8px;">
-      <rect width="20" height="20"/>
-    </svg>
-    Conoscere tecniche di crittografia
-  </h2>
-  <p>Scrivi qui il testo...</p>
-</div>
-
-<!-- Aggiungi gli altri argomenti seguendo lo stesso schema -->
 
 <footer>
-  © 2026 Vasiliki Karali - Progetto Sicurezza Informatica
+    © 2026 Mario Rossi - Progetto Sicurezza Informatica
 </footer>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
