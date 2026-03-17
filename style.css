@@ -98,9 +98,8 @@ h3 {
 
 /* ===== SFONDI PER PAGINA ===== */
 body.index { background: url('https://images.unsplash.com/photo-1581091870623-07d3b08a36c5?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; }
-body.introduzione { 
-    /* SFONDO TECNOLOGICO E INFORMATICA */
-    background: url('https://images.unsplash.com/photo-1581091012184-cd8fa7c1d839?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; 
+body.introduzione {
+    background: url('https://images.unsplash.com/photos/abstract-digital-code-on-a-dark-background-ZHJyKcwYpRU?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
     background-size: cover;
 }
 
