@@ -2,64 +2,50 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Introduzione</title>
+<title>Introduzione - Sicurezza Informatica</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="introduzione">
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="introduzione.html">Introduzione</a>
+  <a href="introduzione.html" class="active">Introduzione</a>
   <a href="prerequisiti.html">Prerequisiti</a>
   <a href="conoscenze.html">Conoscenze</a>
   <a href="abilita-competenze.html">Abilità & Competenze</a>
 </nav>
 
+<div class="main-content">
 <h1>Introduzione</h1>
 
 <div class="card">
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ffff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
-      <path d="M2 3h20v14H2V3zm18 2H4v10h16V5zM0 17h24v2H0v-2z"/>
-    </svg>
-    Sicurezza di un sistema informatico
-  </h2>
-  <p>Scrivi qui il testo...</p>
-</div>
-
-<div class="card">
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ffff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
-      <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
-    </svg>
-    La sicurezza informatica
-  </h2>
-  <p>Scrivi qui il testo...</p>
-</div>
-
-<div class="card">
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ffff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
-      <path d="M4 4h16v12H4z"/>
-    </svg>
-    Crittografia
-  </h2>
-  <p>Scrivi qui il testo...</p>
-</div>
-
-<div class="card">
-  <h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ffff" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;">
-      <path d="M2 3h20v18H2z"/>
-    </svg>
-    VPN e protocolli sicuri
-  </h2>
-  <p>Scrivi qui il testo...</p>
+  <div class="text">
+    <h2>Concetti base</h2>
+    <p>In questa sezione introduciamo i concetti fondamentali della sicurezza informatica.</p>
+    
+    <button class="accordion">Sicurezza di un sistema informatico</button>
+    <div class="panel">
+      <p>Qui puoi scrivere la spiegazione dettagliata.</p>
+    </div>
+    
+    <button class="accordion">Crittografia</button>
+    <div class="panel">
+      <p>Qui puoi scrivere la spiegazione dettagliata.</p>
+    </div>
+    
+    <p>Ecco un termine importante: <span class="tooltip">VPN
+      <span class="tooltiptext">Virtual Private Network, rete privata virtuale.</span>
+    </span></p>
+    
+  </div>
 </div>
 
 <footer>
-  © 2026 Vasiliki Karali - Progetto Sicurezza Informatica
+    © 2026 Mario Rossi - Progetto Sicurezza Informatica
 </footer>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
